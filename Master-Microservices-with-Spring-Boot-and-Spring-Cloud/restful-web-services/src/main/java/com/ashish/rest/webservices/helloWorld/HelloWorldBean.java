@@ -1,4 +1,4 @@
-package com.ashish.rest.webservices;
+package com.ashish.rest.webservices.helloWorld;
 
 public class HelloWorldBean {
 

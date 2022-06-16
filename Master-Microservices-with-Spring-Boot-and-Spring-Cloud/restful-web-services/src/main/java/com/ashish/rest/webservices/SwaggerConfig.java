@@ -19,9 +19,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig {
 
-	  public static final Contact DEFAULT_CONTACT = new Contact(
+	public static final Contact DEFAULT_CONTACT = new Contact(
 			  "Ashish", "website", "ashish.baranwal@gmail.com");
-	  public static final ApiInfo DEFAULT_API_INFO = new ApiInfo(
+	public static final ApiInfo DEFAULT_API_INFO = new ApiInfo(
 			  "Awesome Api Title", "Awesome Api Description", "1.0",
 			  "urn:tos", DEFAULT_CONTACT,
 			  "Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0",
@@ -30,6 +30,7 @@ public class SwaggerConfig {
 			new HashSet<String>(Arrays.asList("application/JSON",
 					"application/xml"));
 
+	
 	@Bean
 	public Docket api() {
 		return new Docket(DocumentationType.SWAGGER_2)
